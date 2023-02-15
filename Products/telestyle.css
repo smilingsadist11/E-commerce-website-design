@@ -1,0 +1,644 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* Navigation Tab */
+.container1{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.active{
+    color:#f6d7ad;
+}
+.navbar .logo img:hover{
+    transform: scale(1.04);
+    transition: 0.5s;
+}
+nav{  
+    text-align: right;
+    padding-top: 0px;
+}
+.section1 .container1 .navbar .logo img{
+    width: 100px;
+    border-radius: 20px;
+    box-shadow: 1px 5px 10px 0px rgba(88, 88, 88, 0.75);  
+    transition: 0.5s;
+}
+nav ul{
+    list-style: none;
+    font-family: 'Poppins', sans-serif;  
+}
+nav ul li{
+    display: inline-block;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;  
+}
+nav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 17.5px;
+    font-weight: bolder;
+}
+nav a:hover{
+    text-decoration: none;
+    color: #f6d7ad;
+}
+.section1{    
+    height: 100px;
+    border: 2px solid #693e16;
+    background-color: rgb(139, 70, 27);
+}
+
+.section2{
+    padding-top: 50px;
+    background-color: #f5cf96;
+}
+.section2 .card{
+    border-radius: 60px;  
+    border: none;
+}
+.offer{
+    padding-top: 20px;  
+    text-align: end;
+    margin-left: 150px;  
+}
+.offer h1{
+    color: #693e16;
+    margin-top: 60px;
+}
+.col-6{
+    width: 600px;
+    text-align: center;
+}
+.section2 .card .service-img{
+    overflow: hidden; 
+    height: 200px;
+    border: none;
+    border-radius: 60px;
+    width: 100%;
+    text-align: end;
+}
+.owl-nav{
+    font-size: 100px;
+    color: #693e16;
+    text-align: center;
+    padding-right: 0px;
+    margin-top: -40px;
+}
+
+/*Products and description*/
+.prodlist{
+    margin-left: 70px;
+    height:auto;
+    padding-top: 30px;
+}
+
+/*brand*/
+.section3{
+    background-color: #ffd9b6;
+}
+.prodlist .col-2{    
+    border: 1px solid #693e16;
+    text-align: center;
+}
+.prodlist .col-2 img{
+    width: 70%;
+    margin-top: 40px;
+    padding-top: 45px;
+    transition: 0.5s;
+}
+.prodlist .col- img:hover{
+    transform: scale(1.04);
+    transition: 0.5s;
+}
+
+/*icon*/
+.prodlist .col-3{    
+    border: 1px solid #693e16;
+    text-align: center;
+    margin-left: 20px;
+}
+.prodlist .col-3 img{
+    width: 80%;
+    margin-top: 30px;
+    transition: 0.5s;
+}
+.prodlist .col-3 img:hover{
+    transform: scale(1.04);
+    transition: 0.5s;
+}
+
+
+/*description*/
+.box{
+    height: 100%;
+    border: 1px solid #693e16;
+    margin-left: 10px;
+    text-align: justify;
+    padding: 20px 20px;
+    
+}
+.detail p{
+    color: #184d58;
+    font-weight: bolder;
+    
+}
+.detail h5{
+    color: #693e16;
+    position: relative;
+}
+.btndiv{
+    text-align: center;
+    background-color: #82ddf0;
+    width: 120px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 60px;
+    border: 1px solid #184d58;
+}
+.btndiv a{
+    color: #184d58;
+    text-decoration: none;
+    font-weight: bolder;
+    
+}
+.btndiv:hover{
+    background-color: #5fbace;
+}
+.section3{
+    padding-bottom: 40px;
+}
+
+
+ 
+/*ACCORDIAN FOR PRODUCT SPECCIFICATIONS*/
+.accordianbig{
+    
+    margin-left: 322px;
+}
+.accordion{
+    margin-top: 10px;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;  
+    background: #407f8d;
+    border: 3px solid black;
+    position: relative;
+    z-index: 2;
+}
+  
+.accordion__label, .accordion__content{
+    padding: 14px 20px;
+    position: relative;
+    z-index: 2;
+}
+  
+.accordion__label{
+    display: block;
+    color: #ffffff;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    transition: 0.1s;
+}
+  
+.accordion__label:hover{
+    background: rgba(0, 0, 0, 0.2);
+}
+  
+.accordion__label::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    width: 12px;
+    height: 6px;
+    background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23FFFFFF99;" /></svg>');
+    background-size: contain;
+    transition: transform 0.4s;
+}
+  
+.accordion__content{
+    background: #82ddf0;
+    line-height: 1.6;
+    font-size: 0.85em;
+    display: none;
+    position: relative;
+    z-index: 2;
+}
+  
+.accordion__input{
+    display: none;
+}
+  
+.accordion__input:checked ~ .accordion__content{
+    display: block;
+}
+  
+.accordion__input:checked ~ .accordion__label::after{
+    transform: translateY(-50%) rotate(0.5turn);
+}
+.accordion__content .col-5{
+    margin-left: 30px;
+    font-size: 15px;
+    font-weight: bolder;
+    color: #184d58;
+    
+}
+
+
+/*Footer*/
+
+.footer{
+    background-color: #21606e;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 60px 0 20px ;
+    padding-left: 120px;
+}
+
+
+/*logo*/
+.footer .col-2{
+        width: 400px;
+        text-align: justify;
+        margin-left: 50px;
+}
+.footer .col-2 img{
+    width: 130px;    
+    margin-left: 95px;
+    border-radius: 20px;
+}
+.footer .col-2 p{
+    margin-top: 25px;
+}
+
+
+/*list items*/
+.footer .col-3{
+    text-align: left;
+    
+    width: auto;
+    margin-left: 30px;
+}
+.footer .col-3 h3{
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+.footer .col-3 ul li{
+    list-style: none;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ol, ul {
+     padding-left: 0px; 
+}
+.footer .col-3 li:hover{
+    color: #f6d7ad;
+}
+
+
+/*download app*/
+.footer .col-4{
+    width: auto;
+    
+}
+.footer .col-4 .applogo .play{
+    margin-top: 10px;
+    width: 150px;
+    height: 50px;
+    margin-right: 30px;
+    margin-left: 0px;
+}
+
+.footer .col-4 .applogo .app{
+    margin-top: 10px;
+    width: 150px;
+    height: 50px;
+    margin-right: 30px;
+}
+
+.menu-icon{
+    width: 28px;
+    display: none;
+    
+}
+
+
+
+@media only screen and (max-width: 800px){
+    nav ul{
+        margin-left: 0px;
+        margin-right:0px;
+        margin-top: 25px;
+        position: absolute;
+        z-index: 2;
+        top: 70px;
+        left: 0;
+        background: #21606e;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        border-radius: 20px;
+    }
+    nav ul li{
+        padding-bottom: 10px;
+        display: block;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    
+
+.section2{
+    padding-top: 0px;
+    background-color: #f5cf96;
+}
+.section2 .card{
+    border-radius: 60px;  
+    border: none;
+}
+.offer{
+    padding-top: 20px;  
+    text-align: center;
+    margin-left: 50px;  
+}
+.offer h1{
+    color: #693e16;
+    margin-top: 30px;
+}
+.col-6{
+    width: 300px;
+    text-align: center;
+}
+.section2 .card .service-img{
+    overflow: hidden; 
+    height: 100px;
+    border: none;
+    border-radius: 60px;
+    width: 100%;
+    text-align: end;
+}
+.owl-nav{
+    font-size: 100px;
+    color: #693e16;
+    text-align: center;
+    padding-right: 0px;
+    margin-top: 0px;
+    margin-left: 20px;
+}
+
+/*Products and description*/
+.prodlist{
+    margin-left: 20px;
+    height:auto;
+    padding-top: 20px;
+}
+
+/*brand*/
+.section3{
+    background-color: #ffd9b6;
+}
+.prodlist .col-2{    
+    border: 1px solid #693e16;
+    text-align: center;
+}
+.prodlist .col-2 img{
+    width: 100%;
+    padding-top: 0px;
+    transition: 0.5s;
+}
+.prodlist .col- img:hover{
+    transform: scale(1.04);
+    transition: 0.5s;
+}
+
+/*icon*/
+.prodlist .col-3{    
+    border: 1px solid #693e16;
+    text-align: center;
+    margin-left: 20px;
+}
+.prodlist .col-3 img{
+    width: 100%;
+    transition: 0.5s;
+}
+.prodlist .col-3 img:hover{
+    transform: scale(1.04);
+    transition: 0.5s;
+}
+
+
+/*description*/
+.box{
+    height: 100%;
+    border: 1px solid #693e16;
+    margin-left: 10px;
+    text-align: justify;
+    padding: 10px 10px;
+    
+}
+.detail p{
+    font-size: 10px;
+    color: #184d58;
+    font-weight: bolder;
+    
+}
+.detail h5{
+    color: #693e16;
+    font-size: 15px;
+    position: relative;
+}
+.btndiv{
+    text-align: center;
+    background-color: #82ddf0;
+    width: 70px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    border-radius: 60px;
+    border: 1px solid #184d58;
+}
+.btndiv a{
+    font-size: 12px;
+    color: #184d58;
+    text-decoration: none;
+    font-weight: bolder;
+    
+}
+.btndiv:hover{
+    background-color: #5fbace;
+}
+.section3{
+    padding-bottom: 40px;
+}
+
+
+ 
+/*ACCORDIAN FOR PRODUCT SPECCIFICATIONS*/
+.accordianbig{
+    
+    margin-left: 10px;
+}
+.accordion{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 350px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;  
+    background: #407f8d;
+    border: 3px solid black;
+    position: relative;
+    z-index: 2;
+}
+  
+.accordion__label, .accordion__content{
+    padding: 5px 5px;
+    position: relative;
+    z-index: 2;
+}
+  
+.accordion__label{
+    display: block;
+    color: #ffffff;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    transition: 0.1s;
+}
+  
+.accordion__label:hover{
+    background: rgba(0, 0, 0, 0.2);
+}
+  
+.accordion__label::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    width: 12px;
+    height: 6px;
+    background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23FFFFFF99;" /></svg>');
+    background-size: contain;
+    transition: transform 0.4s;
+}
+  
+.accordion__content{
+    background: #82ddf0;
+    line-height: 1.6;
+    font-size: 0.85em;
+    display: none;
+    position: relative;
+    z-index: 2;
+}
+  
+.accordion__input{
+    display: none;
+}
+  
+.accordion__input:checked ~ .accordion__content{
+    display: block;
+}
+  
+.accordion__input:checked ~ .accordion__label::after{
+    transform: translateY(-50%) rotate(0.5turn);
+}
+.accordion__content .col-5{
+    margin-left: 15px;
+    font-size: 12px;
+    font-weight: bolder;
+    color: #184d58;
+    
+}
+
+/*Footer*/
+
+.footer{
+    background-color: #21606e;
+    color: #ffffff;
+    font-size: 15px;
+    padding-left: 30px;
+    height: auto;
+    
+}
+
+/*logo*/
+.footer .col-2{
+    padding-top: 30px;
+    width: auto;
+    text-align: center;
+    margin-left: 0px;
+}
+.footer .col-2 img{
+    width: 100px;    
+    margin-left: 0px;
+    border-radius: 20px;
+}
+.footer .col-2 p{
+    margin-top: 25px;
+}
+
+
+/*list items*/
+.footer .col-3{
+    text-align: left;
+    width: fit-content;
+    margin-left: 0px;
+}
+.footer .col-3 h3{
+    padding-bottom: 30px;
+    font-size: 25px;
+}
+.footer .col-3 ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ol, ul {
+     padding-left: 0px; 
+}
+.footer .col-3 li:hover{
+    color: #f6d7ad;
+}
+
+
+/*download app*/
+.footer .col-4{
+    width: auto;
+    
+}
+.footer .col-4 .applogo .play{
+    margin-top: 10px;
+    width: 150px;
+    height: 50px;
+    margin-right: 30px;
+    margin-left: 0px;
+}
+
+.footer .col-4 .applogo .app{
+    margin-top: 10px;
+    width: 150px;
+    height: 50px;
+    margin-right: 30px;
+}
+
+.menu-icon{
+    width: 28px;
+    display: block;
+}
+}
