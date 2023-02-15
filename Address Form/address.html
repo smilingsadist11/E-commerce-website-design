@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechCube | Address</title>
+   
+     <!--SHORTCUT ICON-->
+    <link rel="shortcut icon" href="/MAJOR PROJECT/image/logo.jpg" type="image/x-icon">
+     
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+     
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+   
+    <!--Style page connection-->
+    <link rel="stylesheet" href="/MAJOR PROJECT/Address Form/address.css">
+    
+    <!--fontawesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Owl Carousel css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<body>
+
+   
+    <!--section1 Navbar etc-->
+    <section class="section1">
+      <div class="container1">
+          <div class="navbar">
+              <div class="logo">
+                <a href="/MAJOR PROJECT/Home/Intro.html">
+                  <img src="/MAJOR PROJECT/image/logo.jpg">
+                </a>
+              </div>
+       
+              <nav>
+                <ul id="MenuItems">
+                  <li><a href="/MAJOR PROJECT/Home/Home.html">Home</a></li>
+                  <li><a href="/MAJOR PROJECT/Products/Products.html">Products</a></li>
+                  <li><a href="/MAJOR PROJECT/Description/aboutus.html">About Us</a></li>
+                  <li><a href="/MAJOR PROJECT/Login form/login.html">Login</a></li>
+              </ul>
+              </nav>
+              <img src="/MAJOR PROJECT/image/menu.png"  class="menu-icon" onclick="menutoggle()">
+          </div>         
+       </div>
+  </section>
+
+
+    <!--Address Form-->
+    <section class="signup-section">
+       <div class="adform">
+        <form name="form-googlesheet" method="post">
+       
+            <h4>Delivery Address       <i class="fa-solid fa-location-dot"></i> </h4>
+
+            <div class="prodlist">         
+                                    
+                        <label for="name1">Full Name</label><br>
+                        <input type="text" class="textfield" id="name1" name="Name" required><br> 
+                        <span id="errorname" style="color: brown; font-size: 14px;"></span>
+                        <br>
+            
+                        <label for="email1">Registered E-Mail ID</label><br>
+                        <input type="email" class="textfield" id="email1" name="Email ID" required><br> 
+                        <span id="erroremail" style="color: brown; font-size: 14px;"></span>
+                        <br>
+            
+                        <label for="locality1">Locality</label><br>
+                        <input type="text" class="textfield" id="locality1" name="Locality" required><br>
+                        <span id="errorlocality" style="color: brown; font-size: 14px;"></span>
+                        <br>
+            
+                        <label for="landmark1">Landmark</label><br>
+                        <input type="text" class="textfield" id="landmark1" name="Landmark" required><br>
+                        <span id="errorlandmark" style="color: brown; font-size: 14px;"></span>
+                        <br>
+                       
+                        <label for="address">Address Line 1</label><br>
+                        <input type="text" class="textfield" id="address" name="Address" required><br>
+                        <span id="erroraddress" style="color: brown; font-size: 14px;"></span>
+                        <br>
+                               
+
+                        <label for="state1">State</label><br>
+                        <input type="text" class="textfield" id="state1" name="State" required><br>
+                        <span id="errorstate" style="color: brown; font-size: 14px;"></span>
+                        <br>
+                        
+                        <label for="pincode1">Postal-Code</label><br>
+                        <input type="number" class="textfield" id="pincode1" name="pincode" required><br>
+                        <span id="errorpincode" style="color: brown; font-size: 14px;"></span>
+                        <br>
+            
+                        <label for="contactno1">Contact Number</label><br>
+                        <input type="text" class="textfield" id="contactno1" name="contact" required><br>
+                        <span id="errorcontact" style="color: brown; font-size: 14px;"></span>
+                        <br>                    
+                
+            </div>
+
+            
+              <!-- CALL VERIFICATION JAVASCRIPT FUNCTION-->
+           <div class="databutton">
+              <div class="validate">
+              <button type="button" class="btnexplore" onclick="return checking()" >Validate Format</button>
+            </div>
+
+            <div class="google">
+              <button type="submit" class="btnexplore">Confirm Submission</button>
+            </div>
+        </div>
+              
+        </form>
+      </div>
+      </section>
+
+       <div class="pay">
+         <div class="row">
+           <div class="col-5">          
+               <img src="/MAJOR PROJECT/image/separator4.jpeg">
+           </div>
+
+
+           <div class="col-1">
+              <a href="/MAJOR PROJECT/Payment form/payoption.html">
+               <img src="/MAJOR PROJECT/image/payment1.jpg" alt="">
+             </a>
+        
+
+           </div>
+
+             <div class="col-3">
+                <a href="/MAJOR PROJECT/Payment form/payoption.html">
+                  <i class="fa-solid fa-forward"></i>
+                  <h5>Proceed To Payment Gateway</h5>
+               </a>
+             </div>
+        
+     </div>
+  </div>    
+  
+  <!--FOOTER-->
+    <div class="footer">
+      <div class="row">
+             
+
+        <div class="col-4">
+          <h3>Download our app</h3>
+          <p>Available on Android and IOS</p>
+          
+          <div class="applogo">
+            <a href="https://play.google.com/store"><img class="play" src="/MAJOR PROJECT/image/brand logo/playstore.jpg" alt=""></li></a>
+            <a href="https://www.apple.com/in/app-store/"><img class="app" src="/MAJOR PROJECT/image/brand logo/appstore.png" alt=""></li></a>
+          </div>
+        </div>
+
+
+        <div class="col-2">
+          <a href="/MAJOR PROJECT/Home/Intro.html"><img src="/MAJOR PROJECT/image/logo.jpg" alt=""></a>
+          <p>Your One Stop Destination For Premium Electroincs</p>
+        </div>
+
+        
+
+        <div class="col-3">
+          <h3>Useful Links</h3>
+          <ul>
+            <a href="/MAJOR PROJECT/Description/aboutus.html"><li>About-Us</li></a>
+            <a href="/MAJOR PROJECT/Description/connect.html"><li>Connect With us</li></a>
+            <a href="/MAJOR PROJECT/Description/support.html"><li>Customer Support</li></a>
+            <a href="/MAJOR PROJECT/Description/return.html"><li>Return Policy</li></a>
+          </ul>
+        </div>
+
+        <div class="col-3">
+          <ul>
+            <h3>Connect with us</h3>
+            <a href="https://www.facebook.com/"><li>Facebook <i class="fa-brands fa-facebook-square"></i></li></a>
+            <a href="https://twitter.com/"><li>Twitter  <i class="fa-brands fa-twitter"></i></li></a>
+            <a href="https://www.instagram.com/"><li>Instagram <i class="fa-brands fa-instagram"></i></li></a>
+            <a href="https://www.youtube.com/"><li>Youtube  <i class="fa-brands fa-youtube"></i></li></a>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+</body>
+
+ <!--Jquery-->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+ <!--Bootstrap Js-->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+ 
+ <script>
+  var MenuItems = document.getElementById("MenuItems");
+
+  MenuItems.style.maxHeight= "0px";
+
+  function menutoggle(){
+    if(MenuItems.style.maxHeight== "0px")
+    {
+      MenuItems.style.maxHeight="300px";
+    }
+    else
+    {
+       MenuItems.style.maxHeight="0px";
+    }
+  }
+</script>
+
+ <script src="address.js"></script>
+
+  <!--Google Sheets Connection-->
+  <script>
+    const scriptURL =
+    'https://script.google.com/macros/s/AKfycby0aQwB22eFx-sUljC3k4tec5NcqXS3Aby7_NP2P6epvhOYJ_g6X6X_f9O7aQb_ZXzS2Q/exec'
+    const form = document.forms['form-googlesheet']
+ 
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, {
+                method: 'POST',
+                body: new FormData(form)
+            })
+            .catch(error => console.error('Error!', error.message))
+            .then(response => alert(
+                "Address Updated Successfully. Proceed to Payment Gateway"))
+            
+    })
+ 
+ </script>
+ 
+</html>

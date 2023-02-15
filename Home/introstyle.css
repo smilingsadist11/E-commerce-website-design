@@ -1,0 +1,86 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+h1{
+    color: darkgreen;
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: black;
+    background-image: url(https://wallpapercave.com/wp/wp2015688.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-left: 0px;
+    
+}
+
+
+.logon{
+    width: auto;
+    padding-top:60px;
+    padding-left:60px;
+}
+.logon img{
+    margin-top: 10px;
+    width: 250px;
+    height: 200px;
+    border-radius: 35px;
+    box-shadow: 0px 5px 10px 0px rgba(23, 23, 23, 0.75);  
+} 
+.logon p{
+    padding-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    color: rgb(216, 51, 22);
+}
+
+.section1 p{
+    color: rgb(43, 43, 43);
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+.section1{
+   margin-top: 30px;
+   margin-left: 60px;
+}
+.section1 .btndiv a{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    background-color: darkgreen;
+    border-radius: 25px;
+    box-shadow: 0px 5px 10px 0px rgba(23, 23, 23, 0.75);
+    text-align: center;
+    padding: 10px 30px;
+    
+}
+.btndiv i{
+    margin-left: 20px;
+    font-size: 22px;
+}
+.btnexplore:hover{
+    color: white;
+    transition: 2s;
+    background-image: linear-gradient(180deg, rgb(1, 126, 1), rgb(1, 54, 1));
+}
+
+@media only screen and (max-width: 800px){
+    body{
+        background-color: rgb(213, 255, 196);
+        background-image: none;        
+    }
+    .logon p{
+        padding-bottom: 30px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 25px;
+        font-weight: bolder;
+        color: rgb(146, 37, 18);
+    }
+}
